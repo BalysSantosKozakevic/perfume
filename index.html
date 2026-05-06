@@ -30,6 +30,90 @@
         .menu a:hover {
             color: #f8bbd0;
         }
+        body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f5f2;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Seção principal */
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #2c2c2c;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Categorias */
+.categoria {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #d4a373;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.categoria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.categoria h2 {
+    margin-top: 0;
+    color: #d4a373;
+}
+
+/* Notas */
+.notas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notas li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #2c2c2c;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta button {
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta button:hover {
+    background-color: #b08968;
+    transform: scale(1.05);
+}
     </style>
 </head>
 
@@ -48,8 +132,43 @@
             </div>
         </header>
 
-        <main>
+        <main class="container">
 
+            <section class="hero">
+                <h1>Descubra o Mundo dos Perfumes</h1>
+                <p>Explore fragrâncias únicas que expressam personalidade, elegância e sofisticação.</p>
+            </section>
+        
+            <section class="categoria">
+                <h2>Perfumes Masculinos</h2>
+                <p>Notas intensas e marcantes, com combinações de madeira, especiarias e âmbar.</p>
+            </section>
+        
+            <section class="categoria">
+                <h2>Perfumes Femininos</h2>
+                <p>Fragrâncias delicadas com toques florais, frutados e adocicados.</p>
+            </section>
+        
+            <section class="categoria">
+                <h2>Perfumes Unissex</h2>
+                <p>Aromas equilibrados e modernos que combinam com qualquer estilo.</p>
+            </section>
+        
+            <section class="notas">
+                <h2>Notas Olfativas</h2>
+                <ul>
+                    <li><strong>Topo:</strong> Primeira impressão</li>
+                    <li><strong>Coração:</strong> Aroma principal</li>
+                    <li><strong>Base:</strong> Fixação e profundidade</li>
+                </ul>
+            </section>
+        
+            <section class="cta">
+                <h2>Encontre sua essência</h2>
+                <p>Descubra fragrâncias que combinam com você.</p>
+                <button>Ver Coleção</button>
+            </section>
+        
         </main>
 
         <footer>
